@@ -3,7 +3,9 @@
 // arguments and returns the largest of them. Use the 
 // if-then-else construct available in JavaScript.
 // ---------------------
-
+function max(num1,num2){
+    
+}
 console.assert(max(2,3) === 3)
 console.assert(max(23,24) === 24)
 console.assert(max(-23, 12) === 12)
