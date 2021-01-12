@@ -18,13 +18,13 @@ var instructors = [
 // ---------------------------
 // 1. Find largest number
 // ---------------------------
-
+var  numLargest = Math.max.apply(Math,numbers)
 
 // ---------------------------
 // 2. Find longest string
 // ---------------------------
 
-
+var strLongest = 
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
