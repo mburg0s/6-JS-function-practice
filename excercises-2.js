@@ -68,12 +68,11 @@ console.assert(isVowel("2") === false)
 // the string "tothohisos isos fofunon".
 // ---------------------
 function rovarspraket(str){
-    var translate = function(text) {
     
         var vowels = ["a", "e", "i", "o", "u", " "]
         var pHolder = ""
-        for (i = 0; i < text.length; i++) {
-           var current = text.charAt(i); 
+        for (i = 0; i < str.length; i++) {
+           var current = str.charAt(i); 
           if (vowels.indexOf(current) != -1) {
               pHolder = (pHolder+ (current))
           } else {
@@ -81,7 +80,6 @@ function rovarspraket(str){
           }
         }
         return pHolder
-      }
 }
 console.assert(rovarspraket("a") === "a")
 console.assert(rovarspraket("b") === "bob")
