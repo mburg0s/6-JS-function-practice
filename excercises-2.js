@@ -69,18 +69,18 @@ console.assert(isVowel("2") === false)
 // ---------------------
 function rovarspraket(str){
     var translate = function(text) {
-        var string = text.toLowerCase();
-        var vowels = ["a", "e", "i", "o", "u", " "];
-        var y = "";
-        for (i = 0; i < string.length; i++) {
-           var current = string.charAt(i); 
+    
+        var vowels = ["a", "e", "i", "o", "u", " "]
+        var pHolder = ""
+        for (i = 0; i < text.length; i++) {
+           var current = text.charAt(i); 
           if (vowels.indexOf(current) != -1) {
-              y = (y + (current));
+              pHolder = (pHolder+ (current))
           } else {
-              y = (y + (current + "o" + current));
+              pHolder = (pHolder + (current + "o" + current))
           }
         }
-        return y;
+        return pHolder
       }
 }
 console.assert(rovarspraket("a") === "a")

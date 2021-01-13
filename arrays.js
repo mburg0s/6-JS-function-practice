@@ -24,21 +24,46 @@ var  numLargest = Math.max.apply(Math,numbers)
 // 2. Find longest string
 // ---------------------------
 
-var strLongest = 
+var strLongest =''
+for (var i=0; i< strings.length; i++){
+    if (strLongest.length < strings[i].length){
+        strLongest =strings[i]
+    }
+}
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
-
+    var evenNumbers =' '
+    
+     for(var i=0; i<numbers.length; i++){
+         if ((numbers[i]%2)==0){
+            evenNumbers = evenNumbers + ' '+ numbers[i]
+         }
+        
+     }
 
 
 // ---------------------------
 // 4. Find odd numbers
 // ---------------------------
-
+var oddNumbers =''
+    
+     for(var i=0; i<numbers.length; i++){
+         if ((numbers[i]%2)!=0){
+             oddNumbers = oddNumbers + ' ' + numbers[i]
+         }
+     }
 
 // ---------------------------
 // 5. Find words that contain `is`
 // ---------------------------
+var strIs =''
+for(var i=0; i<strings.length; i++){
+    if ((strings[i].includes('is'))){
+       strIs = strIs  + ' '+ strings[i]
+    }   
+   
+}
 
 
 
@@ -46,10 +71,17 @@ var strLongest =
 // 5. Join Both Arrays Together
 // ---------------------------
 
-
+var concatArray = numbers.concat(strings)
 
 
 // ---------------------------
 // 6. Use the Instructors array and find all that teach JavaScript, 
 //    then sort them alphabetically
 // ---------------------------
+var insName =[]
+for( var i=0; i <instructors.length; i++){
+    if (instructors[i].teaches = 'JavaScript'){
+        insName.push(instructors[i].firstname)
+    }
+    insName.sort()
+}
