@@ -85,10 +85,10 @@ console.assert(greaterThan(-234, 1) === false)
 // is the parameter that was passed in.
 
 function greet(Name){
-    var strHello='Hello, '
-    var helloName= strHello + Name + '!' 
+    var helloName= `Hello, ${Name}!` 
     return helloName
 }
+
 console.assert(greet("Michael") === "Hello, Michael!")
 console.assert(greet("R2D2") === "Hello, R2D2!")
 console.assert(greet("Iron Man") === "Hello, Iron Man!")
@@ -103,10 +103,10 @@ console.assert(greet("Iron Man") === "Hello, Iron Man!")
 // strings. For example:
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
+
 function madlib(word1,word2,word3,word4){
-    var wBrown = ' brown '
-    var wOver = ' over the '
-    var madLibWord= 'The ' + word1 + wBrown + word2 + ' '+ word3 + wOver + word4 +'.'
+    var madLibWord= `The ${word1} brown ${word2} ${word3} over the ${word4}.`
+
     return madLibWord
 }
 console.assert(madlib("quick","fox","jumps","fence")=== "The quick brown fox jumps over the fence.")
