@@ -104,4 +104,3 @@ function reverse(str){
 }
 console.assert(reverse("books") === "skoob")
 console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
-}
