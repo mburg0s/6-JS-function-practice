@@ -97,4 +97,8 @@ function reverse(str){
 }
 
 console.assert(reverse("books") === "skoob")
+<<<<<<< HEAD
 console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
+=======
+console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
+>>>>>>> db3546c9df59c01325ebf8b50bb63fa3322dbc5c
