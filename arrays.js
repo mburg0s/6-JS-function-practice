@@ -18,8 +18,10 @@ var instructors = [
 // ---------------------------
 // 1. Find largest number
 // ---------------------------
-var  numLargest = Math.max.apply(Math,numbers)
-
+    numbers.sort(function(a, b) {
+        return b - a
+    })
+    var  numLargest =numbers[0]
 // ---------------------------
 // 2. Find longest string
 // ---------------------------
@@ -33,11 +35,11 @@ for (var i=0; i< strings.length; i++){
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
-    var evenNumbers =' '
-    
-     for(var i=0; i<numbers.length; i++){
-         if ((numbers[i]%2)==0){
-            evenNumbers = evenNumbers + ' '+ numbers[i]
+    var evenNumbers = ''
+
+     for(var i=0; i<numbers.length; i++) {
+         if ((numbers[i]%2)==0) {
+            evenNumbers = evenNumbers  + ' ' + numbers[i]
          }
         
      }
@@ -80,8 +82,9 @@ var concatArray = numbers.concat(strings)
 // ---------------------------
 var insName =[]
 for( var i=0; i <instructors.length; i++){
-    if (instructors[i].teaches = 'JavaScript'){
+    if (instructors[i].teaches === 'JavaScript'){
         insName.push(instructors[i].firstname)
     }
-    insName.sort()
+    
 }
+insName.sort()
